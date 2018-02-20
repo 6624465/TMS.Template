@@ -1,0 +1,740 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Elite CRM Admin Template - CRM admin dashboard web app kit</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/style-timeline.css" rel="stylesheet" />
+    <link href="css/custom-style.css" rel="stylesheet" />
+	<style>
+        body{
+            padding-top:0px;
+        }
+	.customtab2{
+	border:none;
+
+	}
+    a{
+        vertical-align:initial !important;
+    }
+    .nav-link{
+        background:#fff;
+    }
+    .btn-default{
+       background:none;border-bottom:1px solid #e4e7ea;border-top:none;border-left:none;border-right:none;
+    }
+    .color-table.success-table thead th {
+    background-color: #ff6545;
+    color: #fff;
+}
+    .container-fluid{
+        padding-left:5px;
+    }
+    .box-title{
+        margin-left:13px;
+    }
+    .pd-right{
+        padding-right:4px;
+    }
+    .tab-space{
+        margin-right:-20px;
+    }
+    .container-images img{
+    width:30% !important;
+    display:inline;
+    margin-left:5px;
+    margin-top:10px;
+   
+}
+    .mr-top{
+        margin-top:20px !important;
+    }
+    .icheck-list h5{
+        font-weight:500;
+        margin-top:0px;
+        color:#686868;
+        margin-bottom:20px;
+    }
+    .btns{
+        margin-top:35px;
+    }
+    .btns .btn{
+        border-radius:5px;
+    }
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+.carousel1 {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 50px;
+    line-height: 1.6;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #b8d8ff;
+}
+.carousel-indicators .active {
+background: #77b5fe;
+}
+.carousel-control.left{
+    background:#77b5fe;
+}
+.carousel-control.right{
+    background:#77b5fe;
+}
+
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    
+    position: relative;
+    bottom: 5px;
+}
+.circle .fa{
+    text-align:center;
+    vertical-align:middle;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    font-size:16px;
+    font-weight:100;
+    color:#77b5fe;
+    vertical-align:middle;
+    line-height:1.5;
+}
+
+.timeline:before{
+    background:none;
+}
+        .timeline {
+            padding: 0px;
+        }
+        .cd-horizontal-timeline .events-wrapper::before{
+            background:none;
+        }
+        .cd-horizontal-timeline .events-wrapper::after{
+            background:none;
+        }
+
+       .modal-sml{
+    width:60% !important;
+    max-width: 100%;
+}
+
+
+ 
+	</style>
+</head>
+
+<body class="fix-sidebar">
+    <!-- Preloader -->
+    
+    
+        <!-- Top Navigation -->
+        
+        <!-- End Top Navigation -->
+        <!-- Left navbar-header -->
+       
+        <!-- Page Content -->
+        <div id="">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box-title">Pending Customer Approval
+                            <div class="dropdown" style="float:right;">
+                                <a href="#" class="dropdown-toggle u-dropdown btn btn-info btn-circle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu animated">
+                                    <li><a href="#"><i class="fa fa-book dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Cost Sheet</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-clone pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Clone Order</a></li>
+                                    <li><a href="#"><i class="fa fa-retweet dark-blue" aria-hidden="true"></i>&nbsp;&nbsp;Change Order Type</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-exchange red-icon" aria-hidden="true"></i>&nbsp;&nbsp;Transfer Container(s) to New Order</a></li>
+                                    <li><a href="#"><i class="fa fa-upload purple-icon" aria-hidden="true"></i>&nbsp;&nbsp;Transfer Container(s) to Existing Order</a></li>
+
+
+
+
+                                </ul>
+
+                            </div>
+                            <a href="#" class="btn btn-primary btn-circle pull-right" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>            
+                                       
+
+            <div class="col-md-12 pd-right">
+                                    <div class="white-box pd-0">
+                                       <div class="title">
+                                           <span>Pending Customer Approval</span>
+                                           <div class="pull-right">
+                                               <div class="dropdown" style="float:right;">
+                                                   <a href="#" class="dropdown-toggle u-dropdown btn btn-primary btns-align" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                   <ul class="dropdown-menu animated">
+                                                       <li><a href="#"><i class="fa fa-check-square-o dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Select All</a></li>
+                                                       <li><a href="#"><i class="fa fa-square-o pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Unselect All</a></li>
+
+                                                       <li role="separator" class="divider"></li>
+                                                       <li><a href="#"><i class="fa fa-plus blue-icon" aria-hidden="true"></i>&nbsp;&nbsp;Add Multiple Container</a></li>
+                                                       <li><a href="#"><i class="fa fa-pencil-square red-icon" aria-hidden="true"></i>&nbsp;&nbsp;Update Multiple Containers</a></li>
+                                                       <li><a href="#"><i class="fa fa-trash-o dark-blue" aria-hidden="true"></i>&nbsp;&nbsp;Delete Multiple Containers</a></li>
+
+                                                       <li role="separator" class="divider"></li>
+                                                       <li><a href="#"><i class="fa fa-pencil-square Purple-icon" aria-hidden="true"></i>&nbsp;&nbsp;Update VAS to Multiple Containers</a></li>
+                                                       <li><a href="#"><i class="fa fa-pencil-square dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Update PU/DO Mode to Multiple Containers</a></li>
+                                                       <li role="separator" class="divider"></li>
+                                                       <li><a href="#"><i class="fa fa-eraser pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Clear Details</a></li>
+                                                   </ul>
+                                               </div>&nbsp;
+                                               <a href="#" class="btn btn-primary btns-align" data-toggle="modal" data-target="#exampleModal" style="float:left; background:#358df5; border:none; margin-top:2px;">+ Add</a>
+                                               <!--<a href="#" class="btn btn-primary" style="margin-bottom:10px; margin-left:10px; background:#77b5fe; border:none;">More</a>-->
+
+                                           </div>
+                                       </div>
+                                        
+                                        <div class="clearfix"></div>
+                                        
+                                            <div class="col-md-3">
+
+                                                <div class="summery-item bg-green">
+                                                    <div class="summary-left bg-left">
+                                                        <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="summery-title">
+                                                        Total 20 Footer<span class="count">300</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-3">
+
+                                                <div class="summery-item bg-orange">
+                                                    <div class="summary-left bg-orange-left">
+                                                        <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="summery-title">
+                                                        Total 40 Footer<span class="count">300</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-3">
+
+                                                <div class="summery-item bg-blue">
+                                                    <div class="summary-left bg-blue-left">
+                                                        <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="summery-title">
+                                                        Total 45 Footer<span class="count">300</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-3">
+
+                                                <div class="summery-item bg-lightblue">
+                                                    <div class="summary-left bg-lightblue-left">
+                                                        <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="summery-title">
+                                                        Total No. of Containers<span class="count">300</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        
+                                       <div class="clearfix"></div>
+                                        
+                                            
+                                        <div class="container-fluid" style="padding:15px 15px;">
+                                            <div class="table-responsive">
+                                                <table class="table color-table success-table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width:20px;">Select</th>
+                                                            
+                                                            <th>Customer Approval Status</th>
+                                                            <th>Work Order</th>
+                                                            <th>Revision</th>
+                                                            <th>Date</th>
+                                                            <th>Container No.</th>
+                                                            <th>Customer</th>
+                                                            <th>EOR Type</th>
+                                                            <th>Internal Status</th>
+                                                            <th>Yard location</th>
+                                                            <!--<th style="width:25px;">Details</th>-->
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="form-check" style="margin-left: 10px;">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                                        <span class="custom-control-indicator"></span>
+
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td>Pending</td>
+                                                            <td>OOLU125454</td>
+                                                            <td>20</td>
+                                                            <td>GP</td>
+                                                            <td>None</td>
+                                                            <td>D/N Own</td>
+                                                            <td>02/07/2018</td>
+                                                            <td>G1.0</td>
+                                                            <td>Pending</td>
+                                                            <!--<td><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Container Info</button></td>-->
+                                                            <td class="text-nowrap">
+                                                                <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                                <a href="#" data-toggle="tooltip" data-original-title="Delete"> <i class="fa fa-trash text-danger"></i> </a>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row showdiv" style="display:none;">
+
+                                            <div class="col-md-6">
+                                                <div class="box-title">Movements </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Movement</th>
+                                                                <th>Transaction No.</th>
+                                                                <th>MVMT Date</th>
+                                                                <th style="width:20px">Status</th>
+                                                                <th>Yard Location</th>
+                                                                <th>Truck Trasaction No.</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>FULL IN</td>
+                                                                <td>EISCT114070252</td>
+                                                                <td>07/02/2018</td>
+                                                                <td>
+                                                                    <div class="form-check" style="margin-left:10px;">
+                                                                        <label class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                                            <span class="custom-control-indicator"></span>
+
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>SCT IMP</td>
+                                                                <td>GISCT1140514239</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box-title">VAS charges</div>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Charge Code</th>
+                                                            <th>Payment Term</th>
+                                                            <th>Payment to</th>
+                                                            <th>Qty</th>
+                                                            <th>Is Autoload</th>
+                                                            <th>Is Vas</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                <div class="col-md-12 mr-bt-10">
+                <div class="col-md-6">
+                    <a href="#"><div class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save</div></a>
+                    <a href="#"><div class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;&nbsp;Approve</div></a>
+                    <a href="#"><div class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;&nbsp;Delete</div></a>
+                    <a href="#"><div class="btn btn-info"><i class="fa fa-print" aria-hidden="true"></i>&nbsp;&nbsp;Print</div></a>
+                </div>
+                <div class="col-md-6">
+                    <div class="pull-right">
+
+                        <a href="#"><div class="btn btn-warning"><i class="fa fa-eraser" aria-hidden="true"></i>&nbsp;&nbsp;Clear</div></a>
+                        <a href="#"><div class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;Back</div></a>
+                    </div>
+                </div>
+                    </div>
+                                </div>
+                                 
+				
+<div class="clearfix"></div>
+
+                <!--modals-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">�</span></button>
+                                <h4 class="modal-title" id="exampleModalLabel1">Container Details</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-md-5">
+                                    <div class="title-box"><h3>Repair Details</h3></div>
+                                    <form>
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-12">Damage Code</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Wear and Tear Damages</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-12">Repair Code</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Servey</option>
+                                                   
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-12">Repair Location</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Floor left Selection</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-12">Test</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Test</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-12">Service Type</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Service Type</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-12">Responsibility</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Responsibility</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group col-md-12">
+                                            <label class="col-sm-12">Remarks</label>
+                                            <div class="col-sm-12">
+
+                                                <textarea type="text" class="form-control form-control-line" value=""></textarea>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                                <div class="col-md-7 border-left">
+                                    <div class="title-box"><h3>Material Details</h3></div>
+                                    <form>
+
+                                        <div class="row">
+                                            <div class="form-group col-md-4">
+                                                <label class="col-sm-12">Material Qty</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Material Qty">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">&nbsp;</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-line">
+                                                        <option></option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <label class="col-sm-12">Material Price</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Material Price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="row">
+                                            <div class="form-group col-md-4">
+                                                <label class="col-sm-12">Supply No</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Material Qty">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group col-md-8">
+                                                <label class="col-sm-12">Currency</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-line">
+                                                        <option>THB</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Repair Qty</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Material Qty">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check form-check-top-mr">
+                                                    <label class="custom-control custom-checkbox">
+                                                        <input type="checkbox" id="mycheckbox2" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <label for="flat-checkbox-1" style="font-weight:100;">Owner Supplied</label>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label class="col-sm-12">Currency</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control form-control-line">
+                                                        <option>THB</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Len/Width</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Len/Width">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">&nbsp;</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Labour Rate</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Labour Rate">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Total Amount</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Total Amount">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Radius</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Len/Width">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Total Labour Charges</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Labour Rate">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Tax Amount</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Total Amount">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Adjustable Rate</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Labour Rate">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check form-check-top-mr">
+                                                    <label class="custom-control custom-checkbox">
+                                                        <input type="checkbox" id="mycheckbox2" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <label for="flat-checkbox-1" style="font-weight:100;">Rate Adjustable</label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Total Material</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Labour Rate">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="col-sm-12">Net Amount</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control form-control-line" placeholder="Total Amount">
+                                                </div>
+                                            </div>
+                                            
+
+                                        </div>
+                                       
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="btn btn-success" style="background:#676767; border:1px solid #676767;"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save</div>
+                                <button type="button" class="btn btn-default close-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+            <!-- /.container-fluid -->
+          
+       
+        <!-- /#page-wrapper -->
+ 
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/tether.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Counter js -->
+    <script src="plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!--Morris JavaScript -->
+    <script src="plugins/bower_components/raphael/raphael-min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+
+    <!-- Sparkline chart JavaScript -->
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+    <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <script src="plugins/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="plugins/bower_components/jquery.easy-pie-chart/easy-pie-chart.init.js"></script>
+    <script src="js/main.js"></script>
+ 
+</body>
+
+</html>

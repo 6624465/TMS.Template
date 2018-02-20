@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "eliteadmin-inverse", ".", "{837BB40B-7BAD-49C6-B5BB-FC049D87476D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64025"
+		Debug.AspNetCompiler.PhysicalPath = "..\eliteadmin-inverse\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64025\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64025"
+		Release.AspNetCompiler.PhysicalPath = "..\eliteadmin-inverse\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64025\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64025"
+		SlnRelativePath = "..\eliteadmin-inverse\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{837BB40B-7BAD-49C6-B5BB-FC049D87476D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837BB40B-7BAD-49C6-B5BB-FC049D87476D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE87F1DA-5E57-4E29-927B-FABD03892F9E}
+	EndGlobalSection
+EndGlobal
