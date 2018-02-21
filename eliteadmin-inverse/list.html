@@ -1,0 +1,454 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Elite CRM Admin Template - CRM admin dashboard web app kit</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/style-timeline.css" rel="stylesheet" />
+    <link href="css/custom-style.css" rel="stylesheet" />
+	<style>
+        body{
+            padding-top:0px;
+        }
+        .btn:active,.btn:focus,.btn:hover{
+    outline:0 !important;
+    text-decoration:none;
+    box-shadow:initial;
+}
+	.customtab2{
+	border:none;
+
+	}
+    a{
+        vertical-align:initial !important;
+    }
+    .nav-link{
+        background:#fff;
+    }
+    .btn-default{
+       background:none;border-bottom:1px solid #e4e7ea;border-top:none;border-left:none;border-right:none;
+    }
+    .color-table.success-table thead th {
+    background-color: #ff6545;
+    color: #fff;
+}
+    .container-fluid{
+        padding-left:5px;
+    }
+    .box-title{
+        margin-left:13px;
+    }
+    .pd-right{
+        padding-right:4px;
+    }
+    .tab-space{
+        margin-right:-20px;
+    }
+    .container-images img{
+    width:30% !important;
+    display:inline;
+    margin-left:5px;
+    margin-top:10px;
+   
+}
+    .mr-top{
+        margin-top:20px !important;
+    }
+    .icheck-list h5{
+        font-weight:500;
+        margin-top:0px;
+        color:#686868;
+        margin-bottom:20px;
+    }
+    .btns{
+        margin-top:35px;
+    }
+    .btns .btn{
+        border-radius:5px;
+    }
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+.carousel1 {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 50px;
+    line-height: 1.6;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #b8d8ff;
+}
+.carousel-indicators .active {
+background: #77b5fe;
+}
+.carousel-control.left{
+    background:#77b5fe;
+}
+.carousel-control.right{
+    background:#77b5fe;
+}
+
+.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    
+    position: relative;
+    bottom: 5px;
+}
+.circle .fa{
+    text-align:center;
+    vertical-align:middle;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    font-size:16px;
+    font-weight:100;
+    color:#77b5fe;
+    vertical-align:middle;
+    line-height:1.5;
+}
+       .modal-sml{
+    width:60% !important;
+    max-width: 100%;
+}
+       .card-body{
+           padding:10px;
+       }
+       .card-body > form{
+           margin-top:15px;
+       }
+       
+.clickable{
+    cursor: pointer;   
+}
+.panel-title{
+   color: #8a8a8a !important;
+   text-transform:capitalize !important;
+}
+.panel .panel-heading{
+    padding:5px 10px;
+}
+.panel-heading span {
+	margin-top: -20px;
+	font-size: 15px;
+}
+.panel-darkblue .panel-heading, .panel-primary .panel-heading{
+    background: #eeeeef;
+    border: 1px solid #e4e4e4;
+   
+}
+
+ 
+	</style>
+    
+    </script>
+</head>
+
+<body class="fix-sidebar">
+    <!-- Preloader -->
+    
+
+       
+        <!-- Left navbar-header -->
+   
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box-title">
+                           Pending Customer Approval
+                            <div class="dropdown" style="float:right;">
+                                <a href="#" class="dropdown-toggle u-dropdown btn btn-info btn-circle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu animated">
+                                    <li><a href="#"><i class="fa fa-book dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Cost Sheet</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-clone pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Clone Order</a></li>
+                                    <li><a href="#"><i class="fa fa-retweet dark-blue" aria-hidden="true"></i>&nbsp;&nbsp;Change Order Type</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-exchange red-icon" aria-hidden="true"></i>&nbsp;&nbsp;Transfer Container(s) to New Order</a></li>
+                                    <li><a href="#"><i class="fa fa-upload purple-icon" aria-hidden="true"></i>&nbsp;&nbsp;Transfer Container(s) to Existing Order</a></li>
+
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-circle pull-right" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>            
+            <div class="col-md-12">
+                <div class="white-box">
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title clickable"><i class="fa fa-plus"></i>&nbsp;&nbsp;Advance Search</h3>
+                        </div>
+                        <div class="panel-body" style="display:none;">
+                            <form>
+                                <div class="form-group col-md-4">
+                                    <label class="col-sm-12">Order No.</label>
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control form-control-line" placeholder="Order No.">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="col-sm-12">Declaration No.</label>
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control form-control-line" placeholder="Declaration No.">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="col-sm-12">Manifest No.</label>
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control form-control-line" placeholder="Manifest No.">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-md-12">Date From</label>
+                                    <div class="input-group col-md-12">
+                                        <input class="form-control form-control-line" data-val="true" data-val-date="The field DateOfBirth must be a date." data-val-required="The DateOfBirth field is required." name="driver.DateOfBirth" placeholder="ETA" type="text" value="01/02/2018 14:24:54">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-md-12">Date To</label>
+                                    <div class="input-group col-md-12">
+                                        <input class="form-control form-control-line" data-val="true" data-val-date="The field DateOfBirth must be a date." data-val-required="The DateOfBirth field is required." name="driver.DateOfBirth" placeholder="ETA" type="text" value="01/02/2018 14:24:54">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <button class="btn btn-primary pull-right" type="search"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Search</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="clearfix"></div>
+                                            <div class="table-responsive">
+                                                <table class="table color-table success-table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Declaration No.</th>
+                                                            
+                                                            <th>Order No.</th>
+                                                            <th>Ocean B/L No.</th>
+                                                            <th>House B/L No.</th>
+                                                            <th>Voyage No.</th>
+                                                            <th>Importer</th>
+                                                            <th>Loading Port</th>
+                                                            <th>Discharge Port</th>
+                                                            <th>Status</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                               12345
+                                                            </td>
+                                                            <td>Pending</td>
+                                                            <td>OOLU125454</td>
+                                                            <td>20</td>
+                                                            <td>GP</td>
+                                                            <td>None</td>
+                                                            <td>02/07/2018</td>
+                                                            <td>G1.0</td>
+                                                            <td>Pending</td>
+                                                            <!--<td><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Container Info</button></td>-->
+                                                            <td class="text-nowrap">
+                                                                <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                               
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        
+                                        <br>
+                    <div class="row showdiv" style="display:none;">
+
+                        <div class="col-md-6">
+                            <div class="box-title">Movements </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Movement</th>
+                                            <th>Transaction No.</th>
+                                            <th>MVMT Date</th>
+                                            <th style="width:20px">Status</th>
+                                            <th>Yard Location</th>
+                                            <th>Truck Trasaction No.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>FULL IN</td>
+                                            <td>EISCT114070252</td>
+                                            <td>07/02/2018</td>
+                                            <td>
+                                                <div class="form-check" style="margin-left:10px;">
+                                                    <label class="custom-control custom-checkbox">
+                                                        <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>SCT IMP</td>
+                                            <td>GISCT1140514239</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-title">VAS charges</div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Charge Code</th>
+                                        <th>Payment Term</th>
+                                        <th>Payment to</th>
+                                        <th>Qty</th>
+                                        <th>Is Autoload</th>
+                                        <th>Is Vas</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+             </div>
+       
+
+                <!--modals-->
+              
+
+            
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> &copy; 2018</footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/tether.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Counter js -->
+    <script src="plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!--Morris JavaScript -->
+    <script src="plugins/bower_components/raphael/raphael-min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+
+    <!-- Sparkline chart JavaScript -->
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+    <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <script src="plugins/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="plugins/bower_components/jquery.easy-pie-chart/easy-pie-chart.init.js"></script>
+    <script src="js/main.js"></script>
+
+   
+    <script>
+    $(document).on('click', '.panel-heading .clickable', function(e){
+        var $this = $(this);
+        if(!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('fa fa-minus').addClass('fa fa-plus');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('fa fa-plus').addClass('fa fa-minus');
+        }
+    })
+    </script>
+
+
+
+
+</body>
+
+</html>
