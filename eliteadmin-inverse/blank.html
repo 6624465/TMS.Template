@@ -842,12 +842,18 @@
         }
 
         function removeTab(e, index) {
-            debugger;
+            
             var isSelectedTabRemoved = false;
-            var prevNodeIndex = -1;
+            var prevNextIndex = -1;
             if ($('#litab_' + index).hasClass('active')) {
                 isSelectedTabRemoved = true;
-                prevNodeIndex = $('#litab_' + index).prev().data('index');
+                
+                prevNextIndex = $('#litab_' + index).next().data('index');                
+                if (typeof prevNextIndex == 'undefined') {
+                    prevNextIndex = $('#litab_' + index).prev().data('index');
+                    if (typeof prevNextIndex == 'undefined')
+                        prevNextIndex = 0;
+                }
             }
 
             $('#litab_' + index).remove();
@@ -855,7 +861,7 @@
 
             if (isSelectedTabRemoved) {
                 setTimeout(function () {
-                    tabClick(prevNodeIndex);
+                    tabClick(prevNextIndex);
                 }, 150);
             }
             e.preventDefault();
