@@ -370,7 +370,7 @@ hr{
 }
 .notify .heartbit{
     position:absolute;
-    top:-20px;
+    top:-16px;
     right:-16px;
     height:25px;
     width:25px;
@@ -394,7 +394,7 @@ hr{
     background-color:#fb9678;
     position:absolute;
     right:-6px;
-    top:-10px
+    top:-6px
 }
 @-moz-keyframes heartbit{
     0%{
@@ -767,12 +767,12 @@ label{
 }
 .footer{
     bottom:0;
-    color:#58666e;
+    color:#fff;
     left:0;
     padding:20px 30px;
     position:absolute;
     right:0;
-    background:#fff
+    background:#676767
 }
 .bg-title{
     background:#fff;
@@ -849,8 +849,8 @@ label{
 .navbar-top-links>li>a{
     color:#fff;
     padding:0 14px;
-    line-height:45px;
-    min-height:45px
+    line-height:40px;
+    min-height:40px
 }
 .navbar-top-links>li>a:hover{
     background:rgba(0,0,0,.1)
@@ -889,7 +889,7 @@ label{
 }
 .navbar-header .navbar-toggle{
     float:none;
-    padding:0 15px;
+    /*padding:0 15px;*/
     line-height:20px;
     border:0;
     color:rgba(255,255,255,.5);

@@ -12,7 +12,7 @@
 }
 .top-left-part {
   background: #5394e0;
-  height:45px;
+  height:40px;
 }
 .btn-default {
             background: none;
@@ -30,7 +30,7 @@
      text-align:center;
      display:block;
      position:relative;
-     top: -7px;
+     top: -10px;
         }
  .navbar{
      min-height:initial;
@@ -314,5 +314,5 @@
    background:rgb(227, 237, 249);
 }
 .footer{
-    padding: 5px 5px;
+    padding: 10px 5px;
     }
