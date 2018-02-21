@@ -12,6 +12,7 @@
 }
 .top-left-part {
   background: #5394e0;
+  height:45px;
 }
 .btn-default {
             background: none;
@@ -28,7 +29,12 @@
      line-height:3.3;
      text-align:center;
      display:block;
+     position:relative;
+     top: -7px;
         }
+ .navbar{
+     min-height:initial;
+ }
 .chart > h4{
     white-space:nowrap;
     font-size:14px;
@@ -53,6 +59,9 @@
 }
 .mr-btm{
     margin-bottom:10px;
+}
+.panel{
+    margin-bottom:0px !important;
 }
 .mr-btm .fa{
     color:#ccc !important;
@@ -200,6 +209,13 @@
     /*padding:13px !important;*/
     padding:11px;
 }
+.btn{
+    margin-bottom:5px;
+}
+.btn-lg{
+    width: 100%;
+    color: #fff;
+    }
 .bg-title{
     overflow:initial !important;
 }
@@ -223,6 +239,9 @@
 }
 .btn-red{
     background:#dd4b39 !important;
+}
+.form-material .form-control, .form-material .form-control.focus, .form-material .form-control:focus{
+    background-image:linear-gradient(#03a9f3,#03a9f3),linear-gradient(rgba(120,130,140,.13),rgba(120,130,140,.13))
 }
 .close2{
     position:relative;
@@ -291,3 +310,9 @@
 .mrbt-10{
     margin-bottom:10px;
 }
+.tab-container{
+   background:rgb(227, 237, 249);
+}
+.footer{
+    padding: 5px 5px;
+    }

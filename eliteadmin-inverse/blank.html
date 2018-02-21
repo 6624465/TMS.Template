@@ -31,7 +31,7 @@
     <link href="css/tabstyles.scss" rel="stylesheet/scss" type="text/css" />
     <style class="cp-pen-styles">
         .tab-container {
-            background: rgb(189,189,189);
+            background: rgb(227, 237, 249);
             margin: 0;
             padding: 0;
             max-height: 40px;
@@ -62,7 +62,7 @@
                     border-top-right-radius: 28px 145px;
                     padding: 0 30px 0 25px;
                     height: 170px;
-                    background: #c3d5e6;
+                    background: #77b5fe;
                     position: relative;
                     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
                     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -70,7 +70,7 @@
                     width: 200px;
                     max-width: 200px;
                     min-width: 20px;
-                    border: 1px solid #aaa;
+                    /*border: 1px solid #aaa;*/
                 }
 
                     .tab-container ul.nav-tabs > li:first-child {
@@ -84,7 +84,7 @@
         #content {
             padding: 0px;
         }
-
+        
         .tab-container ul.nav-tabs > li > a {
             display: block;
             max-width: 100%;
@@ -175,6 +175,9 @@
                 .tab-container ul.nav-tabs .btn.btn-default:active {
                     background: #9cb5cc;
                 }
+                .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+                    border:none;
+                }
 
         /*.tab-container .tab-pane {
                 padding: 60px 40px;
@@ -197,15 +200,19 @@
             background-color: inherit;
             border: none;
         }
+        span>b:hover{
+            cursor:default;
+        }
 
         iframe {
-           height:820px;
+            min-height:820px;
             width: 100%;
             border-top-width: 0px;
             border-bottom-width: 0px;
             border-left-width: 0px;
             border-right-width: 0px;
         }
+  
         /*#main{position:relative;top:41px;}*/
     </style>
 </head>
@@ -471,6 +478,7 @@
                             <li> <a href="#" onclick="AddTab('gate-in.html','Gate In')">Gate In</a></li>
                             <li> <a href="#" onclick="AddTab('gate-out.html','Gate Out')">Gate Out</a></li>
                             <li> <a href="#" onclick="AddTab('Material-issue.html','Material Issue')">Material Issue</a></li>
+                            <li> <a href="#" onclick="AddTab('cost sheet.html','Cost sheet')">Cost Sheet</a></li>
                             <li> <a href="#" onclick="AddTab('list.html','List')">List</a></li>
 
                         </ul>
@@ -706,7 +714,7 @@
                             <div class="tab-content" id="tabContent">
                                 <div class="tab-pane active" id="tabpane_0">
                                     <div class="content tab tab0" id="tabpanecontent_0">
-                                        <iframe src="index.html"></iframe>
+                                        <iframe src="index.html" width="100%" height="100%"></iframe>
                                     </div>
                                 </div>                                
                             </div>
