@@ -1,0 +1,767 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from eliteadmin.themedesigner.in/demos/eliteadmin-inverse/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 06:16:45 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/style-timeline.css" rel="stylesheet" />
+    <link href="css/custom-style.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .timeline:before {
+            background: none;
+        }
+
+        .timeline {
+            padding: 0px;
+        }
+
+        .cd-horizontal-timeline .events-wrapper::before {
+            background: none;
+        }
+
+        .cd-horizontal-timeline .events-wrapper::after {
+            background: none;
+        }
+
+        .cd-horizontal-timeline {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <!-- Page Content -->
+    <div id="">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="box-title">
+                        Credit Entry
+                        <div class="pull-right">
+                            <form role="search" class="app-search hidden-xs">
+                                <input type="text" placeholder="Search..." class="form-control">
+                                <a href="" class="active"><i class="fa fa-search"></i></a>
+                            </form>
+                            <div class="dropdown" style="float:right;">
+                                <a href="#" class="dropdown-toggle u-dropdown btn btn-info btn-circle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu animated">
+                                    <li><a href="#"><i class="fa fa-book dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Cost Sheet</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-clone pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Clone Order</a></li>
+                                    <li><a href="#"><i class="fa fa-retweet dark-blue" aria-hidden="true"></i>&nbsp;&nbsp;Change Order Type</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-exchange red-icon" aria-hidden="true"></i>&nbsp;&nbsp;Transfer Container(s) to New Order</a></li>
+                                    <li><a href="#"><i class="fa fa-upload purple-icon" aria-hidden="true"></i>&nbsp;&nbsp;Transfer Container(s) to Existing Order</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-circle" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- .row -->
+        <!--<div class="col-md-12">
+            <div class="white-box pd-10">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="summery-item bg-green">
+                            <div class="summary-left bg-left">
+                                <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="summery-title">
+                                Total Billable amount<span class="count">300</span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <div class="summery-item bg-orange">
+                            <div class="summary-left bg-orange-left">
+                                <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="summery-title">
+                                <span class="title-align">Billed Amount</span><span class="count">300</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="summery-item bg-blue">
+                            <div class="summary-left bg-blue-left">
+                                <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="summery-title">
+                                Unbilled Amount<span class="count">300</span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>-->
+        <div class="col-md-6 pd-right">
+            <div class="white-box pd">
+                <div class="box-title">General Information</div>
+                <div class="container">
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label class="col-md-12">Cash Reciept Number</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control form-control-line" value="" placeholder="Agent Code">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-md-12">Customer Code</label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control form-control-line" value="" placeholder="Agent Code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                    <label class="col-sm-12">Address</label>
+                                    <div class="col-sm-12">
+                                        <textarea class="form-control form-control-line"></textarea>
+                                    </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                    <label class="col-sm-12">Remarks</label>
+                                    <div class="col-sm-12">
+                                        <textarea class="form-control form-control-line"></textarea>
+                                    </div>
+                               
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 pd-right">
+
+            <div class="white-box pd">
+                <div class="box-title">Event Timeline</div>
+                <section class="cd-horizontal-timeline loaded">
+                    <div class="timeline">
+                        <div class="events-wrapper">
+                            <div class="events" style="width: 1800px;">
+                                <ol>
+                                    <li><a href="#0" data-toggle="popover" title="Popover Header" data-placement="bottom" data-content="Some content inside the popover" data-date="16/01/2014" class="selected" style="left: 120px;">16 Jan</a></li>
+                                    <li><a href="#0" data-toggle="popover" title="Popover Header" data-placement="bottom" data-content="Some content inside the popover" data-date="28/02/2014" style="left: 300px;">28 Feb</a></li>
+                                    <li><a href="#0" data-date="20/04/2014" style="left: 480px;">20 Mar</a></li>
+                                    <li><a href="#0" data-date="20/05/2014" style="left: 600px;">20 May</a></li>
+                                    <li><a href="#0" data-date="09/07/2014" style="left: 780px;">09 Jul</a></li>
+                                    <li><a href="#0" data-date="30/08/2014" style="left: 960px;">30 Aug</a></li>
+                                    <li><a href="#0" data-date="15/09/2014" style="left: 1020px;">15 Sep</a></li>
+                                    <li><a href="#0" data-date="01/11/2014" style="left: 1200px;">01 Nov</a></li>
+                                    <li><a href="#0" data-date="10/12/2014" style="left: 1380px;">10 Dec</a></li>
+                                    <li><a href="#0" data-date="19/01/2015" style="left: 1500px;">29 Jan</a></li>
+                                    <li><a href="#0" data-date="03/03/2015" style="left: 1680px;">3 Mar</a></li>
+                                </ol>
+
+                                <span class="filling-line" aria-hidden="true" style="transform: scaleX(0.0781641);"></span>
+                            </div> <!-- .events -->
+                        </div> <!-- .events-wrapper -->
+
+                        <ul class="cd-timeline-navigation">
+                            <li><a href="#0" class="prev inactive">Prev</a></li>
+                            <li><a href="#0" class="next">Next</a></li>
+                        </ul>
+                </section>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 pd-right">
+
+
+        </div>
+
+
+
+
+        <div class="col-md-12 pd-right">
+            <div class="white-box pd-0">
+                <div class="title">
+                    <span>Charge Details</span>
+                    <div class="pull-right">
+                        <div class="dropdown" style="float:right;">
+                            <a href="#" class="dropdown-toggle u-dropdown btn btn-primary btns-align" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu animated">
+                                <li><a href="#"><i class="fa fa-check-square-o dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Select All</a></li>
+                                <li><a href="#"><i class="fa fa-square-o pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Unselect All</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-plus blue-icon" aria-hidden="true"></i>&nbsp;&nbsp;Add Multiple Container</a></li>
+                                <li><a href="#"><i class="fa fa-pencil-square red-icon" aria-hidden="true"></i>&nbsp;&nbsp;Update Multiple Containers</a></li>
+                                <li><a href="#"><i class="fa fa-trash-o dark-blue" aria-hidden="true"></i>&nbsp;&nbsp;Delete Multiple Containers</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-pencil-square Purple-icon" aria-hidden="true"></i>&nbsp;&nbsp;Update VAS to Multiple Containers</a></li>
+                                <li><a href="#"><i class="fa fa-pencil-square dark-green" aria-hidden="true"></i>&nbsp;&nbsp;Update PU/DO Mode to Multiple Containers</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-eraser pink-icon" aria-hidden="true"></i>&nbsp;&nbsp;Clear Details</a></li>
+                            </ul>
+                        </div>&nbsp;
+                        <a href="#" class="btn btn-primary btns-align" data-toggle="modal" data-target="#exampleModal" style="float:left; background:#358df5; border:none; margin-top:2px;">+ Add</a>
+                        <!--<a href="#" class="btn btn-primary" style="margin-bottom:10px; margin-left:10px; background:#77b5fe; border:none;">More</a>-->
+
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-md-4">
+
+                    <div class="summery-item bg-green">
+                        <div class="summary-left bg-left">
+                            <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="summery-title">
+                            Selling Amount<span class="count">300</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="summery-item bg-orange">
+                        <div class="summary-left bg-orange-left">
+                            <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="summery-title">
+                            Total Amount<span class="count">300</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="summery-item bg-blue">
+                        <div class="summary-left bg-blue-left">
+                            <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="summery-title">
+                            Adjust Amount<span class="count">300</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="clearfix"></div>
+
+
+                <div class="container-fluid" style="padding:15px 15px;">
+                    <div class="table-responsive">
+                        <table class="table color-table success-table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width:20px;">Select</th>
+                                    <th>Charge Code</th>
+                                    <th>Container No</th>
+                                    <th>Size</th>
+                                    <th>Type</th>
+                                    <th>Payment Term</th>
+                                    <th>Payment To</th>
+                                    <th>Movement Code</th>
+                                    <th>Quantity</th>
+                                    <th>Sara</th>
+                                    <th>Quotation</th>
+                                    <th>Is Waived</th>
+                                    <th>Auto Load</th>
+                                    <th>Is VAS</th>
+                                    <th>Discount Type</th>
+                                    <th>Discount Amount</th>
+                                    <!--<th style="width:25px;">Details</th>-->
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>SW001-CA</td>
+                                    <td>OOLU125454</td>
+                                    <td>20</td>
+                                    <td>GP</td>
+                                    <td>Cash</td>
+                                    <td>Customer</td>
+                                    <td>Full out</td>
+                                    <td>1.000</td>
+                                    <td>321</td>
+                                    <td>Standard_240</td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>None</td>
+                                    <td>0.00</td>
+                                    <!--<td><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Container Info</button></td>-->
+                                    <td class="text-nowrap">
+                                        <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                        <a href="#" data-toggle="tooltip" data-original-title="Delete"> <i class="fa fa-trash text-danger"></i> </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>SW001-CA</td>
+                                    <td>OOLU125454</td>
+                                    <td>20</td>
+                                    <td>GP</td>
+                                    <td>Cash</td>
+                                    <td>Customer</td>
+                                    <td>Full out</td>
+                                    <td>1.000</td>
+                                    <td>321</td>
+                                    <td>Standard_240</td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>None</td>
+                                    <td>0.00</td>
+                                    <!--<td><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Container Info</button></td>-->
+                                    <td class="text-nowrap">
+                                        <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                        <a href="#" data-toggle="tooltip" data-original-title="Delete"> <i class="fa fa-trash text-danger"></i> </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>SW001-CA</td>
+                                    <td>OOLU125454</td>
+                                    <td>20</td>
+                                    <td>GP</td>
+                                    <td>Cash</td>
+                                    <td>Customer</td>
+                                    <td>Full out</td>
+                                    <td>1.000</td>
+                                    <td>321</td>
+                                    <td>Standard_240</td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>None</td>
+                                    <td>0.00</td>
+                                    <!--<td><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Container Info</button></td>-->
+                                    <td class="text-nowrap">
+                                        <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                        <a href="#" data-toggle="tooltip" data-original-title="Delete"> <i class="fa fa-trash text-danger"></i> </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>SW001-CA</td>
+                                    <td>OOLU125454</td>
+                                    <td>20</td>
+                                    <td>GP</td>
+                                    <td>Cash</td>
+                                    <td>Customer</td>
+                                    <td>Full out</td>
+                                    <td>1.000</td>
+                                    <td>321</td>
+                                    <td>Standard_240</td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check" style="margin-left: 10px;">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>None</td>
+                                    <td>0.00</td>
+                                    <!--<td><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Container Info</button></td>-->
+                                    <td class="text-nowrap">
+                                        <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                        <a href="#" data-toggle="tooltip" data-original-title="Delete"> <i class="fa fa-trash text-danger"></i> </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <br />
+                <div class="row showdiv" style="display:none;">
+
+                    <div class="col-md-6">
+                        <div class="box-title">Movements </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Movement</th>
+                                        <th>Transaction No.</th>
+                                        <th>MVMT Date</th>
+                                        <th style="width:20px">Status</th>
+                                        <th>Yard Location</th>
+                                        <th>Truck Trasaction No.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>FULL IN</td>
+                                        <td>EISCT114070252</td>
+                                        <td>07/02/2018</td>
+                                        <td>
+                                            <div class="form-check" style="margin-left:10px;">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" id="mycheckbox" class="custom-control-input">
+                                                    <span class="custom-control-indicator"></span>
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>SCT IMP</td>
+                                        <td>GISCT1140514239</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box-title">VAS charges</div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Charge Code</th>
+                                    <th>Payment Term</th>
+                                    <th>Payment to</th>
+                                    <th>Qty</th>
+                                    <th>Is Autoload</th>
+                                    <th>Is Vas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+
+        <div class="col-md-12 mrbt-10">
+            <div class="col-md-6">
+                <a href="#"><div class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save</div></a>
+                <a href="#"><div class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;&nbsp;Delete</div></a>
+                <a href="#"><div class="btn btn-primary"><i class="fa fa-print" aria-hidden="true"></i>&nbsp;&nbsp;Print</div></a>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <a href="#"><div class="btn btn-warning"><i class="fa fa-eraser" aria-hidden="true"></i>&nbsp;&nbsp;Clear</div></a>
+                    <a href="#"><div class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;Back</div></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="clearfix"></div>
+
+        <!--modals-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel1">Charges Information</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12">
+
+                            <form class="form-horizontal">
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label class="col-md-12">Charge Code</label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control form-control-line" placeholder="placeholder">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-3">
+                                        <label class="col-md-12">Container No.</label>
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control form-control-line" placeholder="Container No.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="col-sm-12">Payment Term</label>
+                                        <div class="col-sm-12">
+                                            <select class="form-control form-control-line">
+                                                <option>Select Wharf</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label class="col-sm-12">Container Key</label>
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control form-control-line" placeholder="Container Key">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-sm-12">Billed To</label>
+                                        <div class="col-sm-12">
+                                            <select class="form-control form-control-line">
+                                                <option>Select </option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-md-12">Quantity</label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control form-control-line" value="" placeholder="Quantity">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-md-12">Selling Amount</label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control form-control-line" value="" placeholder="Loading Port">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save</button>
+                        <button type="button" class="btn btn-default close-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- .right-sidebar -->
+        <!-- /.right-sidebar -->
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/tether.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Counter js -->
+    <script src="plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!--Morris JavaScript -->
+    <script src="plugins/bower_components/raphael/raphael-min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+
+    <!-- Sparkline chart JavaScript -->
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+    <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <script src="plugins/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="plugins/bower_components/jquery.easy-pie-chart/easy-pie-chart.init.js"></script>
+    <script src="js/main.js"></script>
+
+   
+    <!--Style Switcher -->
+    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+<!-- Mirrored from eliteadmin.themedesigner.in/demos/eliteadmin-inverse/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 06:18:07 GMT -->
+</html>

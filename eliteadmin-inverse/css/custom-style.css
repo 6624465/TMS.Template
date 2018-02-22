@@ -24,6 +24,24 @@
 .btn-circle{
     margin-right:5px;
 }
+.app-search .form-control, .app-search .form-control:focus{
+   background: #ffffff;
+    margin-top: 0px;
+    color: #fff;
+    border: 1px solid #e8e8e8;
+   
+}
+.app-search {
+    position: relative;
+    margin: 0;
+    line-height:0;
+    float: left;
+    margin-right: 30px;
+}
+.app-search a{
+    top:8px;
+
+}
 
  .logo{
      line-height:3.3;
@@ -250,6 +268,11 @@
     z-index:999;
     right:25px;
 }
+.mr-top{
+    margin-top:35px;
+    background:#f1f1f1;
+
+}
 .pd-0{
     padding:0px !important;
 }
@@ -313,6 +336,21 @@
 .tab-container{
    background:rgb(227, 237, 249);
 }
+::-webkit-scrollbar {
+      width: 6px;
+     
+}
+::-webkit-scrollbar-track {
+      background-color: #fff;
+      height:20px;
+} 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      width:2px;
+        }
+
 .footer{
-    padding: 5px 5px;
+    padding: 1px 1px;
+    font-size:11px;
     }
